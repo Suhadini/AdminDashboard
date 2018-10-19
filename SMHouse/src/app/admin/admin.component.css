@@ -1,0 +1,91 @@
+
+/* Split the screen in half */
+.split {
+   
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+  }
+  
+  
+  /* Control the left side */
+  .left {
+    left: 55px;
+    top:30px;
+    bottom:30px;
+    width: 20%;
+    padding-top:550px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #b9e5f5e7;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 55px;
+    top:30px;
+    bottom:30px;
+    width: 70%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color:#b9e5f5e7;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  img {
+  
+    border-radius: 50%;
+  }
+  input {
+    font-size: 10px;
+    height:20px;
+  }
+  .imagediv {
+    float:left;
+      margin-top:50px;
+  }
+  .imagediv .showonhover {
+    background:red;
+    padding:20px;
+    opacity:0.9;
+    color:white;
+    width: 100%;
+    display:block;	
+    text-align:center;
+    cursor:pointer;
+  }
+  
+  nav a {
+      padding:20px 20px;
+      margin: 50px 10px;
+      font-size: 40px;
+      text-decoration: none;
+      display: inline block;
+      background-color:whitesmoke;
+      border-radius: 20px;
+      cursor: pointer;
+  }
+  nav a:visited, a:link {
+      color: #607D8B;
+  }
+  nav a:hover{
+      color: #039be5;
+      background-color: #CFD8DC;
+  }
+  nav a.active {
+      color: #039be5;
+     
+  }
